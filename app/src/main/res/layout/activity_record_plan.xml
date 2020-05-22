@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tplink.sdk.tpopensdkdemo.device.RecordPlanActivity">
+
+    <include layout="@layout/view_title_bar"
+        android:id="@+id/title_bar"
+        style="@style/ConstraintLayout_title_bar"/>
+
+    <TextView
+        android:id="@+id/record_Plan_Enable_tv"
+        style="@style/device_add_btn"
+        app:layout_constraintTop_toBottomOf="@id/title_bar" />
+
+    <TextView
+        android:id="@+id/record_Plan_day_1"
+        style="@style/device_add_btn"
+        app:layout_constraintTop_toBottomOf="@id/record_Plan_Enable_tv"
+        android:text="@string/record_plan_day1"/>
+
+    <TextView
+        android:id="@+id/record_Plan_day_2"
+        style="@style/device_add_btn"
+        app:layout_constraintTop_toBottomOf="@id/record_Plan_day_1"
+        android:text="@string/record_plan_day2"/>
+
+    <TextView
+        android:id="@+id/record_Plan_day_3"
+        style="@style/device_add_btn"
+        app:layout_constraintTop_toBottomOf="@id/record_Plan_day_2"
+        android:text="@string/record_plan_day3"/>
+
+    <TextView
+        android:id="@+id/record_Plan_day_4"
+        style="@style/device_add_btn"
+        app:layout_constraintTop_toBottomOf="@id/record_Plan_day_3"
+        android:text="@string/record_plan_day4"/>
+
+    <TextView
+        android:id="@+id/record_Plan_day_5"
+        style="@style/device_add_btn"
+        app:layout_constraintTop_toBottomOf="@id/record_Plan_day_4"
+        android:text="@string/record_plan_day5"/>
+
+    <TextView
+        android:id="@+id/record_Plan_day_6"
+        style="@style/device_add_btn"
+        app:layout_constraintTop_toBottomOf="@id/record_Plan_day_5"
+        android:text="@string/record_plan_day6"/>
+
+    <TextView
+        android:id="@+id/record_Plan_day_7"
+        style="@style/device_add_btn"
+        app:layout_constraintTop_toBottomOf="@id/record_Plan_day_6"
+        android:text="@string/record_plan_day7"/>
+
+    <TextView
+        android:id="@+id/record_Plan_advance"
+        style="@style/device_add_btn"
+        app:layout_constraintTop_toBottomOf="@id/record_Plan_day_7"
+        android:text="@string/record_plan_advance"/>
+
+    <TextView
+        android:id="@+id/set_record_day"
+        style="@style/device_add_btn"
+        app:layout_constraintTop_toBottomOf="@id/record_Plan_advance"
+        android:text="@string/set_record_plan"
+        android:visibility="gone"/>
+</android.support.constraint.ConstraintLayout>

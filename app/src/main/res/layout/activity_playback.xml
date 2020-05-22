@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tplink.sdk.tpopensdkdemo.player.PlayerActivity">
+
+    <include layout="@layout/view_title_bar" />
+
+    <FrameLayout
+        android:id="@+id/player_view_holder"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_bar"></FrameLayout>
+
+    <TextView
+        android:id="@+id/player_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/player_view_holder"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/player_flow_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/player_view_holder"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#eee"
+        app:layout_constraintTop_toBottomOf="@id/player_view_holder" />
+
+    <LinearLayout
+        android:id="@+id/player_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        app:layout_constraintTop_toBottomOf="@id/player_view_holder">
+
+        <ImageView
+            android:id="@+id/player_play_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="doClick"
+            android:scaleType="center"
+            android:src="@drawable/tabbar_play" />
+
+        <TextView
+            android:id="@+id/player_date_pick_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:onClick="doClick"
+            android:text="日期"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/player_orientation_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="doClick"
+            android:scaleType="center"
+            android:src="@drawable/tabbar_switch_orientation" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#eee"
+        app:layout_constraintTop_toBottomOf="@id/player_tab_bar" />
+
+    <LinearLayout
+        android:id="@+id/player_seek_layout"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        app:layout_constraintTop_toBottomOf="@id/player_tab_bar">
+
+        <TextView
+            android:id="@+id/player_seek_start_time_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="00:00:00"
+            android:textSize="11dp" />
+
+        <SeekBar
+            android:id="@+id/player_seek_bar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:max="100" />
+
+        <TextView
+            android:id="@+id/player_seek_duration_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="00:00:00"
+            android:textSize="11dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#eee"
+        app:layout_constraintTop_toBottomOf="@id/player_seek_layout" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/player_video_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/player_seek_layout"></android.support.v7.widget.RecyclerView>
+
+
+</android.support.constraint.ConstraintLayout>

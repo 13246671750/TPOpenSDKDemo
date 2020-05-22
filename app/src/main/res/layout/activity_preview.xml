@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tplink.sdk.tpopensdkdemo.player.PlayerActivity">
+
+    <include layout="@layout/view_title_bar" />
+
+    <FrameLayout
+        android:id="@+id/player_view_holder"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_bar"></FrameLayout>
+
+    <TextView
+        android:id="@+id/player_flow_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:textColor="#FF0000"
+        android:textSize="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/player_view_holder" />
+
+    <TextView
+        android:id="@+id/player_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:textColor="#FF0000"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/player_view_holder"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/player_record_duration_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:textColor="#FF0000"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/player_view_holder"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#eee"
+        app:layout_constraintTop_toBottomOf="@id/player_view_holder" />
+
+    <LinearLayout
+        android:id="@+id/player_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        app:layout_constraintTop_toBottomOf="@id/player_view_holder">
+
+        <ImageView
+            android:id="@+id/player_play_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="doClick"
+            android:scaleType="center"
+            android:src="@drawable/tabbar_play" />
+
+        <ImageView
+            android:id="@+id/player_sound_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="doClick"
+            android:scaleType="center"
+            android:src="@drawable/tabbar_sound" />
+
+        <ImageView
+            android:id="@+id/player_quality_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="doClick"
+            android:scaleType="center"
+            android:src="@drawable/tabbar_quality_fluency" />
+
+        <ImageView
+            android:id="@+id/player_orientation_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="doClick"
+            android:scaleType="center"
+            android:src="@drawable/tabbar_switch_orientation" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#eee"
+        app:layout_constraintTop_toBottomOf="@id/player_tab_bar" />
+
+    <LinearLayout
+        android:id="@+id/player_controller_btn_top"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/player_controller_btn_bottom"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/player_tab_bar"
+        app:layout_constraintVertical_chainStyle="spread">
+
+        <ImageView
+            android:id="@+id/player_snapshot_btn"
+            android:layout_width="0dp"
+            android:layout_height="88dp"
+            android:layout_weight="1"
+            android:onClick="doClick"
+            android:scaleType="center"
+            android:src="@drawable/snapshot" />
+
+        <ImageView
+            android:id="@+id/player_record_btn"
+            android:layout_width="0dp"
+            android:layout_height="88dp"
+            android:layout_weight="1"
+            android:onClick="doClick"
+            android:scaleType="center"
+            android:src="@drawable/record" />
+
+        <ImageView
+            android:id="@+id/player_cloud_btn"
+            android:layout_width="0dp"
+            android:layout_height="88dp"
+            android:layout_weight="1"
+            android:onClick="doClick"
+            android:scaleType="center"
+            android:src="@drawable/cloud" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/player_controller_btn_bottom"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:gravity="top"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player_controller_btn_top">
+
+        <ImageView
+            android:id="@+id/player_talk_btn"
+            android:layout_width="0dp"
+            android:layout_height="88dp"
+            android:layout_weight="1"
+            android:onClick="doClick"
+            android:scaleType="center"
+            android:src="@drawable/talk" />
+
+        <ImageView
+            android:id="@+id/player_speak_btn"
+            android:layout_width="0dp"
+            android:layout_height="88dp"
+            android:layout_weight="1"
+            android:onClick="doClick"
+            android:scaleType="center"
+            android:src="@drawable/speak" />
+
+        <ImageView
+            android:id="@+id/player_preset_btn"
+            android:layout_width="0dp"
+            android:layout_height="88dp"
+            android:layout_weight="1"
+            android:onClick="doClick"
+            android:scaleType="center"
+            android:src="@drawable/preset" />
+
+        <ImageView
+            android:id="@+id/player_cruise_btn"
+            android:layout_width="0dp"
+            android:layout_height="88dp"
+            android:layout_weight="1"
+            android:onClick="doClick"
+            android:scaleType="center"
+            android:src="@drawable/cruise" />
+
+
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/player_controller_second_page"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/player_tab_bar">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/player_second_preset_list"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="60dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></android.support.v7.widget.RecyclerView>
+
+        <ImageView
+            android:id="@+id/player_second_pack_up_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:onClick="doClick"
+            android:src="@drawable/selector_pack_up"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.tplink.sdk.tpopensdkdemo.common.TouchButton
+            android:id="@+id/player_second_talking_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/selector_talking"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/player_second_speaking_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="doClick"
+            android:src="@drawable/selector_speaking"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/player_second_cloud_layout"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/player_second_up_btn"
+                style="@style/CloudButton"
+                android:layout_marginTop="40dp"
+                android:text="@string/up"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/player_second_down_btn"
+                style="@style/CloudButton"
+                android:layout_marginBottom="40dp"
+                android:text="@string/down"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+
+                />
+
+            <TextView
+                android:id="@+id/player_second_left_btn"
+                style="@style/CloudButton"
+                android:layout_marginLeft="40dp"
+                android:text="@string/left"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                />
+
+            <TextView
+                android:id="@+id/player_second_right_btn"
+                style="@style/CloudButton"
+                android:layout_marginRight="40dp"
+                android:text="@string/right"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

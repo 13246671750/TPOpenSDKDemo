@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/record_plan_day_tv"
+        style="@style/match_parent_linearLayout_tv"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/record_plan_day_start_time_tv"
+        style="@style/match_parent_linearLayout_tv"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="@string/record_plan_start_time"/>
+
+    <EditText
+        android:id="@+id/record_plan_start_hour"
+        style="@style/match_parent_linearLayout_tv" />
+
+    <EditText
+        android:id="@+id/record_plan_start_min"
+        style="@style/match_parent_linearLayout_tv" />
+
+    <TextView
+        android:id="@+id/record_plan_day_end_time_tv"
+        style="@style/match_parent_linearLayout_tv"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="@string/record_plan_end_time"/>
+
+    <EditText
+        android:id="@+id/record_plan_end_hour"
+        style="@style/match_parent_linearLayout_tv" />
+
+    <EditText
+        android:id="@+id/record_plan_end_min"
+        style="@style/match_parent_linearLayout_tv" />
+
+    <TextView
+        android:id="@+id/record_plan_type_tv"
+        style="@style/match_parent_linearLayout_tv"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="@string/record_plan_type"/>
+
+    <EditText
+        android:id="@+id/record_plan_type"
+        style="@style/match_parent_linearLayout_tv" />
+
+    <TextView
+        android:id="@+id/record_plan_edit_tv"
+        style="@style/match_parent_linearLayout_tv"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/record_plan_modify"
+        android:textColor="@color/white"
+        android:background="@color/text_blue_dark"
+        android:visibility="gone"/>
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/record_plan_day_start_time_tv"
+        style="@style/match_parent_linearLayout_tv"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="@string/microphone_volume"/>
+
+    <EditText
+        android:id="@+id/microphone_volume_edt"
+        style="@style/match_parent_linearLayout_tv"
+        android:editable="true"/>
+
+    <TextView
+        android:id="@+id/set_microphone_volume_tv"
+        style="@style/match_parent_linearLayout_tv"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/set_microphone_volume"
+        android:textColor="@color/white"
+        android:background="@color/text_blue_dark"/>
+
+    <TextView
+        android:id="@+id/record_plan_day_end_time_tv"
+        style="@style/match_parent_linearLayout_tv"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="@string/speaker_volume"/>
+
+    <EditText
+        android:id="@+id/speaker_volume_edt"
+        style="@style/match_parent_linearLayout_tv"
+        android:editable="true"/>
+
+    <TextView
+        android:id="@+id/set_speaker_volume_tv"
+        style="@style/match_parent_linearLayout_tv"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/set_speaker_volume"
+        android:textColor="@color/white"
+        android:background="@color/text_blue_dark"/>
+</LinearLayout>

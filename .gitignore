@@ -1,0 +1,12 @@
+*.iml
+gdb.setup
+gdbserver
+app/src/main/obj
+app/src/main/libs/armeabi
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+/captures
+app/.externalNativeBuild

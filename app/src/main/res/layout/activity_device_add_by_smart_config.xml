@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tplink.sdk.tpopensdkdemo.device.DeviceAddBySmartConfigActivity"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <include layout="@layout/view_title_bar"
+        android:id="@+id/title_bar"
+        style="@style/ConstraintLayout_title_bar"/>
+
+    <EditText
+        android:id="@+id/qrcode_edt"
+        style="@style/match_parent_tv"
+        app:layout_constraintTop_toBottomOf="@id/title_bar"
+        android:hint="@string/smartconfig_qrcode"/>
+
+    <EditText
+        android:id="@+id/ssid_edt"
+        style="@style/match_parent_tv"
+        app:layout_constraintTop_toBottomOf="@id/qrcode_edt"
+        android:hint="@string/smartconfig_ssid"/>
+
+    <EditText
+        android:id="@+id/smartconfig_pwd_edt"
+        style="@style/match_parent_tv"
+        app:layout_constraintTop_toBottomOf="@id/ssid_edt"
+        android:hint="@string/smartconfig_pwd"/>
+
+    <TextView
+        android:id="@+id/add_btn"
+        style="@style/device_add_btn"
+        app:layout_constraintTop_toBottomOf="@id/smartconfig_pwd_edt"
+        android:text="@string/smartconfig_start"/>
+</android.support.constraint.ConstraintLayout>

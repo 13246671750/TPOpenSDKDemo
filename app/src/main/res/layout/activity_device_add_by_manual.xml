@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tplink.sdk.tpopensdkdemo.device.DeviceAddByManualActivity">
+
+    <include layout="@layout/view_title_bar"
+        android:id="@+id/title_bar"
+        style="@style/ConstraintLayout_title_bar"/>
+
+    <EditText
+        android:id="@+id/ip_edit"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:hint="enter ip: "
+        android:text="192.168.1.250"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_bar" />
+
+    <EditText
+        android:id="@+id/port_edit"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:hint="enter port"
+        android:text="80"
+        android:inputType="number"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ip_edit" />
+
+    <EditText
+        android:id="@+id/password_edit"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:hint="enter password"
+        android:text="qqqqqq"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/port_edit" />
+
+    <TextView
+        android:id="@+id/add_dev_btn"
+        style="@style/device_add_btn"
+        app:layout_constraintTop_toBottomOf="@id/password_edit"
+        android:text="@string/device_add_device"/>
+</android.support.constraint.ConstraintLayout>

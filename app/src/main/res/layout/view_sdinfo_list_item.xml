@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray_1"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/device_add_detail_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:fadingEdge="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/view_dev_about_layout"
+                android:id="@+id/diskName_layout"
+                android:layout_width="match_parent"
+                android:layout_height="46dp" />
+
+            <include layout="@layout/view_dev_about_layout"
+                android:id="@+id/rwAttr_layout"
+                android:layout_width="match_parent"
+                android:layout_height="46dp" />
+
+            <include layout="@layout/view_dev_about_layout"
+                android:id="@+id/freeSpace_layout"
+                android:layout_width="match_parent"
+                android:layout_height="46dp" />
+
+            <include layout="@layout/view_dev_about_layout"
+                android:id="@+id/totalSpace_layout"
+                android:layout_width="match_parent"
+                android:layout_height="46dp" />
+
+            <include layout="@layout/view_dev_about_layout"
+                android:id="@+id/videoFreeSpace_layout"
+                android:layout_width="match_parent"
+                android:layout_height="46dp" />
+
+            <include layout="@layout/view_dev_about_layout"
+                android:id="@+id/VideoTotalSpace_layout"
+                android:layout_width="match_parent"
+                android:layout_height="46dp" />
+
+            <include layout="@layout/view_dev_about_layout"
+                android:id="@+id/status_layout"
+                android:layout_width="match_parent"
+                android:layout_height="46dp" />
+
+            <include layout="@layout/view_dev_about_layout"
+                android:id="@+id/detectStatus_layout"
+                android:layout_width="match_parent"
+                android:layout_height="46dp" />
+
+            <include layout="@layout/view_dev_about_layout"
+                android:id="@+id/type_layout"
+                android:layout_width="match_parent"
+                android:layout_height="46dp" />
+
+            <include layout="@layout/view_dev_about_layout"
+                android:id="@+id/recordDuration_layout"
+                android:layout_width="match_parent"
+                android:layout_height="46dp" />
+
+            <include layout="@layout/view_dev_about_layout"
+                android:id="@+id/recordFreeDuration_layout"
+                android:layout_width="match_parent"
+                android:layout_height="46dp" />
+
+            <include layout="@layout/view_dev_about_layout"
+                android:id="@+id/RecordStartTime_layout"
+                android:layout_width="match_parent"
+                android:layout_height="46dp" />
+
+            <include layout="@layout/view_dev_about_layout"
+                android:id="@+id/LoopRecordStatus_layout"
+                android:layout_width="match_parent"
+                android:layout_height="46dp" />
+
+            <TextView
+                android:id="@+id/loop_Operate_tv"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:textColor="@color/white"
+                android:background="@color/text_blue_dark"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/format_tv"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="4dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:textColor="@color/white"
+                android:background="@color/text_blue_dark"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/white"/>
+
+        </LinearLayout>
+</ScrollView>
+</LinearLayout>

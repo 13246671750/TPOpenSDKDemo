@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title_bar"
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include layout="@layout/view_dev_about_layout"
+        android:id="@+id/userName_layout"
+        android:layout_width="match_parent"
+        android:layout_height="46dp" />
+
+    <include layout="@layout/view_dev_about_layout"
+        android:id="@+id/password_layout"
+        android:layout_width="match_parent"
+        android:layout_height="46dp" />
+
+    <include layout="@layout/view_dev_about_layout"
+        android:id="@+id/Model_layout"
+        android:layout_width="match_parent"
+        android:layout_height="46dp" />
+
+    <include layout="@layout/view_dev_about_layout"
+        android:id="@+id/Address_layout"
+        android:layout_width="match_parent"
+        android:layout_height="46dp" />
+
+    <include layout="@layout/view_dev_about_layout"
+        android:id="@+id/VideoPort_layout"
+        android:layout_width="match_parent"
+        android:layout_height="46dp" />
+
+    <include layout="@layout/view_dev_about_layout"
+        android:id="@+id/HardwareVersion_layout"
+        android:layout_width="match_parent"
+        android:layout_height="46dp" />
+
+    <include layout="@layout/view_dev_about_layout"
+        android:id="@+id/SoftwareVersion_layout"
+        android:layout_width="match_parent"
+        android:layout_height="46dp" />
+
+    <TextView
+        android:id="@+id/reset_tv"
+        style="@style/match_parent_linearLayout_tv"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/reset"
+        android:textColor="@color/white"
+        android:background="@color/text_blue_dark"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+</LinearLayout>

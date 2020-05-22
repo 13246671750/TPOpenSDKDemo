@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tplink.sdk.tpopensdkdemo.device.DeviceAddActivity">
+
+    <include layout="@layout/view_title_bar"
+        android:id="@+id/title_bar"
+        style="@style/ConstraintLayout_title_bar"/>
+
+    <TextView
+        android:id="@+id/auto_discover_tv"
+        style="@style/device_add_btn"
+        app:layout_constraintTop_toBottomOf="@id/title_bar"/>
+
+    <TextView
+        android:id="@+id/Manual_tv"
+        style="@style/device_add_btn"
+        app:layout_constraintTop_toBottomOf="@id/auto_discover_tv"/>
+
+    <TextView
+        android:id="@+id/smartconfig_tv"
+        style="@style/device_add_btn"
+        app:layout_constraintTop_toBottomOf="@id/Manual_tv"/>
+
+
+    <TextView
+        android:id="@+id/softap_tv"
+        style="@style/device_add_btn"
+        app:layout_constraintTop_toBottomOf="@id/smartconfig_tv"/>
+
+    <TextView
+        android:id="@+id/voice_config_tv"
+        style="@style/device_add_btn"
+        app:layout_constraintTop_toBottomOf="@id/softap_tv"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/wifiDirect_tv"
+        style="@style/device_add_btn"
+        app:layout_constraintTop_toBottomOf="@id/voice_config_tv"
+        android:visibility="gone"/>
+</android.support.constraint.ConstraintLayout>

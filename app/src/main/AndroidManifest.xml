@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tplink.sdk.tpopensdkdemo">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".common.TPApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
+
+        <activity android:name="com.tplink.sdk.tpopensdkdemo.device.DeviceActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".player.PlayerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name=".player.PreviewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            />
+        <activity
+            android:name=".player.PlaybackActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name=".device.DeviceAddByManualActivity"
+            />
+        <activity
+            android:name=".device.DeviceAutoDiscoverActivity"
+            />
+        <activity
+            android:name=".device.DeviceAddEnterInfoActivity"
+             />
+        <activity
+            android:name=".device.DeviceSettingActivity"
+            />
+        <activity
+            android:name=".device.StorageInfoActivity"
+            />
+        <activity
+            android:name=".device.TimeRebootActivity"
+           />
+        <activity
+            android:name=".device.RecordPlanActivity"
+             />
+        <activity
+            android:name=".device.ModifyDevInfoActivity"
+           />
+        <activity
+            android:name=".device.DeviceAboutActivity"
+            />
+        <activity
+            android:name=".device.DeviceAddActivity"
+            />
+        <activity
+            android:name=".device.DeviceAddSoftApActivity"
+             />
+        <activity
+            android:name=".device.RecordPlanDayActivity"
+             />
+        <activity
+            android:name=".device.RecordPlanAdvanceActivty"
+             />
+        <activity
+            android:name=".device.VolumeSetActivity"
+           />
+        <activity
+            android:name=".device.DeviceAddBySmartConfigActivity"
+            />
+        <activity android:name=".device.DevChannelActivity"
+            />
+        <activity android:name=".device.ChannelInfoActivity"
+             />
+    </application>
+
+</manifest>

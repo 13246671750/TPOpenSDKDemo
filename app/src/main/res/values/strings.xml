@@ -1,0 +1,193 @@
+<resources>
+    <string name="app_name">TPOpenSDKDemo</string>
+    <string name="up">上</string>
+    <string name="down">下</string>
+    <string name="left">左</string>
+    <string name="right">右</string>
+
+    <string name="date_format">%1$d年%2$d月%3$d日</string>
+    <string name="time_format">%1$02d:%2$02d:%3$02d</string>
+    <string name="time_format_sdf">HH:mm:ss</string>
+    <string name="preview">预览</string>
+    <string name="playback">回放</string>
+    <string name="download">录像下载</string>
+    <string name="prefix_snapshot">/snapshot_</string>
+    <string name="prefix_record">/record_</string>
+    <string name="prefix_download">/download_</string>
+    <string name="suffix_jpg">.jpg</string>
+    <string name="suffix_mp4">.mp4</string>
+    <string name="talk_connection_error">对讲连接失败！</string>
+    <string name="timing_record">定时录像</string>
+    <string name="motion_detection">移动侦测</string>
+    <string name="preset">预置点</string>
+
+    <!-- device add -->
+    <string name="auto_discover">自动发现添加</string>
+    <string name="manual_add">手动添加</string>
+    <string name="device_add">添加</string>
+    <string name="device_add_device">添加设备</string>
+    <string name="device_add_already">已添加</string>
+    <string name="device_add_type_nvr2">网络硬盘录像机</string>
+    <string name="device_add_type_ipc">网络摄像机</string>
+    <string name="confirm">确定</string>
+    <string name="enter_password">请输入密码</string>
+    <string name="enter_port">请输入端口号，端口号仅为数字</string>
+    <string name="smartconfig">smartConfig添加</string>
+    <string name="softAp">softap添加</string>
+    <string name="voice_config">声波配置</string>
+    <string name="wifidirect">无线直连添加</string>
+
+    <!-- module supprt -->
+    <string name="LED">LED</string>
+    <string name="TargetTrack">智能跟踪</string>
+    <string name="DevAlarm">设备报警</string>
+    <string name="DevSoundAlarm">声音报警</string>
+    <string name="DevLightAlarm">白光报警</string>
+    <string name="ManualAlarm">手动报警</string>
+    <string name="DigitalSensitivity">视频检测数字灵敏度</string>
+    <string name="Playback">回放</string>
+    <string name="ClientInfo">客户端连接信息</string>
+    <string name="ExposeModule">曝光</string>
+    <string name="ClearLicenceModule">看清车牌</string>
+    <string name="SupplementLampModule">补光灯</string>
+    <string name="WhiteSupplementLamp">白光灯</string>
+    <string name="RecordPlan">录像计划</string>
+    <string name="RecordTiming">定时录像计划</string>
+    <string name="RecordMotion">移动侦测录像计划</string>
+    <string name="ChangePassword">支持修改管理员密码</string>
+    <string name="LocalStorage">SD卡或硬盘存储</string>
+    <string name="Motor">电机云台</string>
+    <string name="PTZ">PTZ协议，一般为高速球机</string>
+    <string name="Preset">预置点</string>
+    <string name="Calibrate">手动校准</string>
+    <string name="ScanTour">扫描巡航</string>
+    <string name="MultiPointTour">多点巡航</string>
+    <string name="Speaker">播放声音</string>
+    <string name="Microphone">语音录音</string>
+    <string name="Audio">双向语音</string>
+    <string name="Vad">双向语音时的人声检测</string>
+    <string name="AEC">双向语音时的回声消除</string>
+    <string name="VoiceCallMode">除半双工外的通话模式，VAD、AEC(未支持)等</string>
+    <string name="Motion">移动侦测</string>
+    <string name="Tamper">视频遮挡侦测</string>
+    <string name="MsgPush">消息推送</string>
+    <string name="FishEyeDev">鱼眼设备</string>
+    <string name="FishEye">鱼眼设备是否支持</string>
+    <string name="FishEyeTopMode">鱼眼设备是否支持顶装</string>
+    <string name="FishEyeWallMode">鱼眼设备是否支持壁装</string>
+    <string name="Share">是否支持分享</string>
+    <string name="LensMask">镜头遮蔽</string>
+    <string name="DownloadProtocol">下载协议</string>
+    <string name="DownloadVideo">视频导出</string>
+    <string name="CondenseVideo">倍速剪辑(浓缩录像)</string>
+    <string name="Greeter">迎宾器</string>
+    <string name="VideoMsg">视频留言</string>
+    <string name="TimingReboot">定时重启</string>
+    <string name="CPE">一体机协议</string>
+    <string name="PassengerStatistics">客流量统计功能</string>
+    <string name="HeatMap">热力图功能</string>
+    <string name="WirelessHotspot">无线热点功能</string>
+    <string name="MoreSDInfo">设备是否支持更多存储信息如已录制时长、最早录像时间等</string>
+    <string name="SpeakerVolume">音量调节</string>
+    <string name="PlaybackScale">倍速回放</string>
+    <string name="WifiConnectionInfo">获取网络连接信息</string>
+
+    <string name="set_open">开启</string>
+    <string name="set_close">关闭</string>
+
+    <string name="time_reboot_detail">定时重启信息</string>
+    <string name="modify_alias">修改设备名称</string>
+    <string name="common_save">保存</string>
+    <string name="dev_settings">摄像机设置</string>
+    <string name="dev_about">关于此摄像机</string>
+    <string name="setting_about_device_model">设备型号</string>
+    <string name="setting_about_recorder_mac_address">MAC地址</string>
+    <string name="setting_about_recorder_ip_address">IP地址</string>
+    <string name="setting_about_recorder_port">端口</string>
+    <string name="setting_about_recorder_manager_name">管理员名称</string>
+    <string name="setting_about_recorder_manager_password">管理员密码</string>
+    <string name="setting_about_hardware_info">硬件版本</string>
+    <string name="setting_about_software_info">软件版本</string>
+    <string name="setting_modify_admin_password">修改管理员密码</string>
+    <string name="reset">恢复出厂设置</string>
+
+    <!-- storage info -->
+    <string name="storage_info_name">硬盘名称</string>
+    <string name="storage_info_attr">硬盘属性</string>
+    <string name="storage_info_freespace">剩余空间大小</string>
+    <string name="storage_info_totalspace">总空间大小</string>
+    <string name="storage_info_videoFreeSpace">硬盘名称</string>
+    <string name="storage_info_VideoTotalSpace">硬盘名称</string>
+    <string name="storage_info_status">状态</string>
+    <string name="storage_info_detectStatus">检测状态</string>
+    <string name="storage_info_type">类型</string>
+    <string name="storage_info_recordDuration">已录制时长</string>
+    <string name="storage_info_recordFreeDuration">剩余可录制时长</string>
+    <string name="storage_info_recordStartTime">最早录像时间</string>
+    <string name="storage_info_looprecordStatus">循环录像状态</string>
+    <string name="storage_info_looprecordoperate">开启/关闭循环录像</string>
+    <string name="storage_info_format">格式化</string>
+    <string name="storage_info_format_failure">格式化失败</string>
+    <string name="storage_info_format_success">格式化成功</string>
+    <string name="storage_info_format_percent">格式化进度</string>
+
+    <!-- Reboot info -->
+    <string name="reboot_status">定时重启开启状态：</string>
+    <string name="reboot_day">定时重启日期(星期几)：</string>
+    <string name="reboot_time">定时重启具体时间：</string>
+    <string name="reboot_operate">开启/关闭定时重启</string>
+    <string name="reboot_now">立即重启</string>
+    <string name="reboot_modify_time">修改时间</string>
+    <string name="reboot_modify_day">修改日期</string>
+
+    <!-- record plan -->
+    <string name="record_plan_day1">星期一</string>
+    <string name="record_plan_day2">星期二</string>
+    <string name="record_plan_day3">星期三</string>
+    <string name="record_plan_day4">星期四</string>
+    <string name="record_plan_day5">星期五</string>
+    <string name="record_plan_day6">星期六</string>
+    <string name="record_plan_day7">星期日</string>
+    <string name="record_plan_edit">编辑录像计划</string>
+    <string name="record_plan_start_time">开始时间(XX时XX分)</string>
+    <string name="record_plan_end_time">结束时间(XX时XX分)</string>
+    <string name="record_plan_type">类型</string>
+    <string name="set_record_plan">设置录像计划</string>
+    <string name="record_plan_state">录像计划开启状态:</string>
+    <string name="record_plan_modify">修改录像计划</string>
+    <string name="record_plan_advance">录像计划高级设置</string>
+    <string name="record_plan_advance_pre">预录时间</string>
+    <string name="record_plan_advance_delay">延迟时间</string>
+    <string name="record_paln_advance_set">设置录像计划高级设置</string>
+
+    <!-- set volume -->
+    <string name="microphone_volume">麦克风音量</string>
+    <string name="speaker_volume">扬声器音量</string>
+    <string name="set_microphone_volume">设置麦克风音量</string>
+    <string name="set_speaker_volume">设置扬声器音量</string>
+
+    <!-- softap -->
+    <string name="softap_pwd_tip">如果待连接wifi有密码，请输入密码</string>
+    <string name="softap_get_wifi_list">获取wifi列表</string>
+    <string name="softap_no_ap_tip">该设备不支持AP模式，可连接到路由器网络后，到自动发现页面尝试发现设备，已确认设备配网成功</string>
+    <string name="softap_connect_wifi_error">设备连接wifi失败，请检查输入的ssid和密码</string>
+    <string name="softap_connect_wifi_success">设备连接wifi成功，请连接到路由器网络后，到自动发现页面添加设备</string>
+    <string name="softap_get_wifi_list_error">获取设备扫描wifi列表失败</string>
+    <string name="softap_send_wifi_error">发送wifi信息失败</string>
+    <string name="softap_get_wifi_connect_info_error">获取wifi联网信息失败</string>
+
+    <!-- smartConfig -->
+    <string name="smartconfig_qrcode">输入设备二维码</string>
+    <string name="smartconfig_ssid">输入WIFI SSID</string>
+    <string name="smartconfig_pwd">输入WIFI 密码</string>
+    <string name="smartconfig_start">开始配置网络</string>
+    <string name="smartconfig_success">网络配置成功</string>
+    <string name="smartconfig_failure">网络配置失败</string>
+
+    <!-- channel -->
+    <string name="dev_channel">设备通道</string>
+    <string name="channel_info">通道信息</string>
+    <string name="channel_name">通道名称</string>
+
+    <string name="enter_common_invalid">输入不合法</string>
+</resources>
